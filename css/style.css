@@ -68,29 +68,6 @@ header {
   margin-left: 50px;
 }
 
-.auth-nav .nav-item + .nav-item {
-  margin-left: 50px;
-}
-
-.nav-item::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.icon-mail::before {
-  background-image: url(../images/envelope.svg);
-}
-
-.icon-tell::before {
-  background-image: url(../images/smartphone.svg);
-}
-
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -150,7 +127,6 @@ header {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-
 .header-link:hover,
 :focus {
   color: var(--acent-color);
@@ -159,10 +135,7 @@ header {
 /*--------Герой--------*/
 
 .section-hero {
-  width: 1600px;
-  height: 600px;
   background-color: var(--primary-background-color);
-  background-image: url(../images/background-image.jpg);
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 200px;
@@ -293,39 +266,12 @@ button:hover,
   display: flex;
 }
 
-.feature-list .feature-item {
+.feature-list .item {
   width: 270px;
 }
 
-.feature-list .feature-item + .feature-item {
+.feature-list .item + .item {
   margin-left: 30px;
-}
-
-.feature-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-color: #f5f4fa;
-}
-
-.icon-antena:before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
 }
 
 .features,
