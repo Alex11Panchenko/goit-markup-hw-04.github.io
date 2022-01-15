@@ -87,7 +87,6 @@ header {
   height: 12px;
   margin-right: 10px;
 }
-
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -147,7 +146,6 @@ header {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-
 .header-link:hover,
 :focus {
   color: var(--acent-color);
