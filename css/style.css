@@ -284,6 +284,32 @@ button:hover,
   padding: 0;
 }
 
+.features-title:before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
+}
+
 .feature-list {
   display: flex;
 }
@@ -308,22 +334,6 @@ button:hover,
   text-align: center;
 }
 
-.icon-antenna {
-  width: 70px;
-  height: 70px;
-}
-.icon-clock {
-  width: 70px;
-  height: 70px;
-}
-.icon-diagram {
-  width: 70px;
-  height: 70px;
-}
-.icon-astronaut {
-  width: 70px;
-  height: 70px;
-}
 /*--------Чем мы занимаемся--------*/
 
 .section-work {
