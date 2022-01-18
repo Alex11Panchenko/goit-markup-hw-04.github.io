@@ -284,30 +284,35 @@ button:hover,
   padding: 0;
 }
 
-.features-title:before {
+.feature-item::before {
   display: block;
   content: "";
   height: 120px;
-  background-color: #f5f4fa;
+  margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: contain;
+  background-color: #f5f4fa;
 }
 
-.icon-antenna::before {
+.icon-antenna:before {
   background-image: url(../images/antenna\ 1.svg);
+  background-size: 70px;
 }
 
 .icon-clock::before {
   background-image: url(../images/clock\ 1.svg);
+  background-size: 70px;
 }
 
 .icon-diagram::before {
   background-image: url(../images/diagram\ 1.svg);
+  background-size: 70px;
 }
 
 .icon-astronaut::before {
   background-image: url(../images/astronaut\ 1.svg);
+  background-size: 70px;
 }
 
 .feature-list {
@@ -414,6 +419,66 @@ button:hover,
 
 .item {
   background-color: var(--basic-white-color);
+}
+
+.link-icon {
+  display: flex;
+  content: "";
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon:hover {
+  background-color: #2196f3;
+}
+
+.icon-instagram {
+  fill: var(--primary-text-color);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-instagram:hover {
+  fill: var(--basic-white-color);
+}
+
+.icon-twitter {
+  fill: var(--primary-text-color);
+}
+
+.icon-twitter:hover {
+  fill: var(--basic-white-color);
+}
+
+.icon-facebook {
+  fill: var(--primary-text-color);
+}
+
+.icon-facebook:hover {
+  fill: var(--basic-white-color);
+}
+
+.icon-linkedin {
+  fill: var(--primary-text-color);
+}
+
+.icon-linkedin:hover {
+  fill: var(--basic-white-color);
+}
+
+.social {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+
+.social .link-icon + .link-icon {
+  margin-left: 10px;
 }
 
 /*--------Подвал--------*/
