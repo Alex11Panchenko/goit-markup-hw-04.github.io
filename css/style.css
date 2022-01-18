@@ -11,6 +11,7 @@
   --primary-background-color: #2f303a;
   --batton-background-color: #f5f4fa;
   --border-color: #ececec;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -67,10 +68,23 @@ header {
 .icon-tell {
   width: 16px;
   height: 12px;
+  fill: var(--primary-text-color);
 }
+
+.icon-tell:hover,
+:focus {
+  fill: var(--acent-color);
+}
+
 .icon-mail {
   width: 16px;
   height: 12px;
+  fill: var(--primary-text-color);
+}
+
+.icon-mail:hover,
+:focus {
+  fill: var(--acent-color);
 }
 
 .list-nav .item + .item {
@@ -202,15 +216,20 @@ button:hover,
   background: #f5f4fa;
   padding: 6px 22px;
   border: none;
+  border-radius: 4px;
 }
 .filtre-button:hover,
 :focus {
   color: var(--basic-white-color);
   background-color: var(--acent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pointer {
   color: var(--basic-white-color);
   background-color: var(--acent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*карточки портфолио */
@@ -254,6 +273,12 @@ button:hover,
   border-left-style: solid;
   border-left-color: var(--border-color);
   border-left-width: 1px;
+}
+
+.previev-element:hover,
+:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products {
@@ -409,7 +434,7 @@ button:hover,
   display: flex;
 }
 
-.team-list .item + .item {
+.team-list .item-photo + .item-photo {
   margin-left: 30px;
 }
 .team-elements {
@@ -417,8 +442,11 @@ button:hover,
   padding-bottom: 30px;
 }
 
-.item {
+.item-photo {
   background-color: var(--basic-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .link-icon {
@@ -438,36 +466,40 @@ button:hover,
 }
 
 .icon-instagram {
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
   width: 20px;
   height: 20px;
 }
 
-.icon-instagram:hover {
+.icon-instagram:hover,
+:focus {
   fill: var(--basic-white-color);
 }
 
 .icon-twitter {
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
 }
 
-.icon-twitter:hover {
+.icon-twitter:hover,
+:focus {
   fill: var(--basic-white-color);
 }
 
 .icon-facebook {
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
 }
 
-.icon-facebook:hover {
+.icon-facebook:hover,
+:focus {
   fill: var(--basic-white-color);
 }
 
 .icon-linkedin {
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
 }
 
-.icon-linkedin:hover {
+.icon-linkedin:hover,
+:focus {
   fill: var(--basic-white-color);
 }
 
@@ -479,6 +511,108 @@ button:hover,
 
 .social .link-icon + .link-icon {
   margin-left: 10px;
+}
+.link-clients {
+  display: flex;
+  content: "";
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.link-clients:hover,
+:focus {
+  border: 1px solid var(--acent-color);
+}
+
+.link-clients + .link-clients {
+  margin-left: 30px;
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
+.text-clients {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 94px;
+  color: var(--title-text-color);
+}
+
+.icon-yaco {
+  width: 41px;
+  height: 46.7px;
+  fill: var(--icon-color);
+}
+
+.icon-yaco:hover,
+:focus {
+  fill: var(--acent-color);
+}
+
+.icon-union {
+  width: 40px;
+  height: 52px;
+  fill: var(--icon-color);
+}
+
+.icon-union:hover,
+:focus {
+  fill: var(--acent-color);
+}
+
+.icon-company {
+  width: 43.46px;
+  height: 41.18px;
+  fill: var(--icon-color);
+}
+
+.icon-company:hover,
+:focus {
+  fill: var(--acent-color);
+}
+
+.icon-foster-peters {
+  width: 84.44px;
+  height: 40.62px;
+  fill: var(--icon-color);
+}
+
+.icon-foster-peters:hover,
+:focus {
+  fill: var(--acent-color);
+}
+
+.icon-brand {
+  width: 62.54px;
+  height: 45.43px;
+  fill: var(--icon-color);
+}
+
+.icon-brand:hover,
+:focus {
+  fill: var(--acent-color);
+}
+
+.icon-tag-line {
+  width: 93.79px;
+  height: 43.93;
+  fill: var(--icon-color);
+}
+
+.icon-tag-line:hover,
+:focus {
+  fill: var(--acent-color);
 }
 
 /*--------Подвал--------*/
@@ -516,3 +650,57 @@ footer {
 address {
   margin-top: 20px;
 }
+
+.box {
+  display: flex;
+  padding: 0;
+  margin-left: 70px;
+  align-items: center;
+}
+
+.link-box {
+  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--basic-white-color);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  content: "";
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-social + .footer-social {
+  margin-left: 10px;
+}
+.footer-social:hover,
+:focus {
+  background-color: var(--acent-color);
+}
+
+.list-social {
+  display: flex;
+}
+
+.footer-link + .footer-link {
+  margin-left: 10px;
+}
+
+/*background: rgba(255, 255, 255, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
