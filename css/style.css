@@ -69,12 +69,14 @@ header {
   width: 16px;
   height: 12px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 
 .icon-mail {
   width: 16px;
   height: 12px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 
 .list-nav .item + .item {
@@ -109,13 +111,19 @@ header {
   text-decoration: none;
   color: var(--acent-color);
 }
+
+.logo:focus {
+  background-color: var(--basic-white-color);
+  color: var(--acent-color);
+}
+
 .part-dark {
   color: #1f1f1f;
 }
 .part-ligt {
   color: var(--basic-white-color);
 }
-.nav-link {
+.nav-button {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -126,11 +134,16 @@ header {
   padding-bottom: 32px;
   display: block;
 }
-.nav-link:hover,
-:focus {
+.nav-button:hover {
   color: var(--acent-color);
+  background-color: var(--basic-white-color);
 }
-.nav-link.current {
+
+.nav-button:focus {
+  color: var(--acent-color);
+  background-color: var(--basic-white-color);
+}
+.nav-button.current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -143,6 +156,8 @@ header {
 }
 
 .header-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,6 +169,12 @@ header {
 .header-link:hover {
   color: var(--acent-color);
 }
+
+.header-link:focus {
+  color: var(--acent-color);
+  background-color: var(--basic-white-color);
+}
+
 .header-link:hover > .icon-tell {
   fill: var(--acent-color);
 }
@@ -162,9 +183,6 @@ header {
   fill: var(--acent-color);
 }
 
-.header-link:focus {
-  color: var(--acent-color);
-}
 .header-link:focus > .icon-tell {
   fill: var(--acent-color);
 }
@@ -177,9 +195,17 @@ header {
 
 .section-hero {
   width: 1600px;
-  height: 600px;
   background-color: var(--primary-background-color);
-  background-image: url(../images/background-image.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-image.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 200px;
@@ -209,6 +235,7 @@ header {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
 }
 button:hover,
 :focus {
@@ -370,6 +397,7 @@ button:hover,
 
 .feature-item {
   text-align: center;
+  align-items: center;
 }
 
 /*--------Чем мы занимаемся--------*/
