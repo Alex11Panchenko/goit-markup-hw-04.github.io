@@ -310,8 +310,20 @@ button:hover,
   border-left-width: 1px;
 }
 
-.previev-element:hover,
-:focus {
+/*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);*/
+
+.filtre-link {
+  display: block;
+}
+
+.filtre-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.filtre-link:focus {
+  background-color: var(--basic-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -553,13 +565,29 @@ button:hover,
 
 .social {
   display: flex;
-  margin-left: 32px;
+  justify-content: center;
   margin-top: 16px;
+}
+
+.list-social {
+  display: flex;
+}
+
+.list-social .element-social + .element-social {
+  margin-left: 10px;
 }
 
 .social .link-icon + .link-icon {
   margin-left: 10px;
 }
+
+/*Постоянне клиенты*/
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .link-clients {
   display: flex;
   content: "";
@@ -578,7 +606,10 @@ button:hover,
 .clients-list {
   display: flex;
   margin-top: 50px;
-  padding-bottom: 94px;
+}
+
+.clients-list .element-client + .element-client {
+  margin-left: 30px;
 }
 
 .text-clients {
@@ -588,16 +619,19 @@ button:hover,
   text-align: center;
   padding: 0;
   margin: 0;
-  padding-top: 94px;
   color: var(--title-text-color);
 }
 .link-clients:hover {
   border: 1px solid var(--acent-color);
 }
 
+.link-clients:focus {
+  background-color: var(--basic-white-color);
+}
+
 .icon-yaco {
-  width: 41px;
-  height: 46.7px;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -606,12 +640,13 @@ button:hover,
 }
 
 .link-clients:focus > .icon-yaco {
+  background-color: var(--basic-white-color);
   fill: var(--acent-color);
 }
 
 .icon-union {
-  width: 40px;
-  height: 52px;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -619,13 +654,14 @@ button:hover,
   fill: var(--acent-color);
 }
 
-.link-clients:focus > .icon-yaco {
+.link-clients:focus > .icon-union {
+  background-color: var(--basic-white-color);
   fill: var(--acent-color);
 }
 
 .icon-company {
-  width: 43.46px;
-  height: 41.18px;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -633,13 +669,14 @@ button:hover,
   fill: var(--acent-color);
 }
 
-.link-clients:focus > .icon-yaco {
+.link-clients:focus > .icon-company {
+  background-color: var(--basic-white-color);
   fill: var(--acent-color);
 }
 
 .icon-foster-peters {
-  width: 84.44px;
-  height: 40.62px;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -647,13 +684,14 @@ button:hover,
   fill: var(--acent-color);
 }
 
-.link-clients:focus > .icon-yaco {
+.link-clients:focus > .icon-foster-peters {
+  background-color: var(--basic-white-color);
   fill: var(--acent-color);
 }
 
 .icon-brand {
-  width: 62.54px;
-  height: 45.43px;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -661,13 +699,14 @@ button:hover,
   fill: var(--acent-color);
 }
 
-.link-clients:focus > .icon-yaco {
+.link-clients:focus > .icon-brand {
+  background-color: var(--basic-white-color);
   fill: var(--acent-color);
 }
 
 .icon-tag-line {
-  width: 93.79px;
-  height: 43.93;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -675,7 +714,8 @@ button:hover,
   fill: var(--acent-color);
 }
 
-.link-clients:focus > .icon-yaco {
+.link-clients:focus > .icon-tag-line {
+  background-color: var(--basic-white-color);
   fill: var(--acent-color);
 }
 
@@ -686,6 +726,22 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--acent-color);
+}
+
+.logo-footer:focus {
+  background-color: var(--primary-background-color);
+  color: var(--acent-color);
+}
+
 .google-link {
   font-style: normal;
   font-size: 14px;
@@ -694,6 +750,11 @@ footer {
   color: var(--basic-white-color);
   text-decoration: none;
 }
+
+.google-link:focus {
+  background-color: var(--primary-background-color);
+}
+
 .footer-link {
   font-style: normal;
   font-size: 14px;
@@ -701,6 +762,10 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.footer-link:focus {
+  background-color: var(--primary-background-color);
 }
 
 .address-list li {
@@ -718,19 +783,19 @@ address {
 .box {
   display: flex;
   padding: 0;
-  margin-left: 70px;
-  align-items: center;
+
+  align-items: baseline;
 }
 
 .link-box {
   margin-left: 70px;
-  margin-top: 72px;
-  margin-bottom: 100px;
 }
 .footer-text {
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--basic-white-color);
   margin: 0;
   padding: 0;
@@ -758,7 +823,15 @@ address {
   background-color: var(--acent-color);
 }
 
+.footer-social > .icon-instagram {
+  fill: var(--basic-white-color);
+}
+
 .footer-social:hover > .icon-instagram {
+  fill: var(--basic-white-color);
+}
+
+.footer-social > .icon-twitter {
   fill: var(--basic-white-color);
 }
 
@@ -766,7 +839,15 @@ address {
   fill: var(--basic-white-color);
 }
 
+.footer-social > .icon-facebook {
+  fill: var(--basic-white-color);
+}
+
 .footer-social:hover > .icon-facebook {
+  fill: var(--basic-white-color);
+}
+
+.footer-social > .icon-linkedin {
   fill: var(--basic-white-color);
 }
 
